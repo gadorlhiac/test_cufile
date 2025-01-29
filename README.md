@@ -8,7 +8,7 @@ nvcc iotest.cu -lcuda -lcufile -o iotest -std=c++11
 
 ## Usage
 ```bash
-Usage: [CUFILE_ENV_PATH_JSON="/cufile/config.json"] GDSFILE="/output/path.bin" ./iomtest [-b bufSize] [-c] [-h] [-n nThreads] [-N numIter] [-p]
+Usage: [CUFILE_ENV_PATH_JSON="/cufile/config.json"] GDSFILE="/output/path.bin" ./iotest [-b bufSize] [-c] [-h] [-n nThreads] [-N numIter] [-p]
 	-b $bufSize   Single buffersize to use. Default: 0x6C000.
 	-c            Use cuFile (may be required depending on memory mode)
 	-d            Use O_DIRECT file descriptor.
